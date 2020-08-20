@@ -9,8 +9,9 @@ public class requestquote {
 	private int roomsrenovate;
 	private int toiletren;
 	private boolean urgent;
+	private String style;
 	public requestquote(String propertytype, int areasize, String requestname, int contactnumber, int budget,
-			String renovationtype, int roomsrenovate, int toiletren, boolean urgent) {
+			String renovationtype, int roomsrenovate, int toiletren, String style, boolean urgent) {
 	
 		this.propertytype = propertytype;
 		this.areasize = areasize;
@@ -20,6 +21,7 @@ public class requestquote {
 		this.renovationtype = renovationtype;
 		this.roomsrenovate = roomsrenovate;
 		this.toiletren = toiletren;
+		this.style = style;
 		this.urgent = urgent;
 	}
 	public String getPropertytype() {
@@ -48,6 +50,9 @@ public class requestquote {
 	}
 	public boolean isUrgent() {
 		return urgent;
+	}
+	public String getStyle() {
+		return style;
 	}
 	
 	
